@@ -3,7 +3,7 @@ import streamlit as st
 import google.generativeai as genai
 import os
 import random
-from dotenv import load_dotenv
+
 
 # Load API key
 load_dotenv()
@@ -48,13 +48,6 @@ if st.button("Generate Recipe"):
 
 
 
-from dotenv import load_dotenv
-import os
 
-# Load API key from .env file
-load_dotenv()
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-
-print("API key Loaded:", GOOGLE_API_KEY) # Test if it works 
 
 
