@@ -1,13 +1,9 @@
-
 import streamlit as st
 import google.generativeai as genai
-import os
 import random
 
-
-# Load API key
-load_dotenv()
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")   #AIzaSyARIslpvh3yfTNS77SSoYxqE08Ar-RgOhQ
+# Directly set API key
+GOOGLE_API_KEY = "AIzaSyARIslpvh3yfTNS77SSoYxqE08Ar-RgOhQ"
 
 # Configure Google Generative AI
 genai.configure(api_key=GOOGLE_API_KEY)
@@ -43,11 +39,3 @@ if st.button("Generate Recipe"):
         st.text_area("Generated Recipe", value=recipe, height=300)
     else:
         st.warning("⚠️ Please enter a topic and word count!")
-
-
-
-
-
-
-
-
