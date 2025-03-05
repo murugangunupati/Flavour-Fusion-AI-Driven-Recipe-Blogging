@@ -6,7 +6,7 @@ import random
 GOOGLE_API_KEY = "AIzaSyARIslpvh3yfTNS77SSoYxqE08Ar-RgOhQ"
 
 # Configure Google Generative AI
-genai.configure(api_key=GOOGLE_API_KEY)
+genai.configure(api_key="AIzaSyARIslpvh3yfTNS77SSoYxqE08Ar-RgOhQ")
 
 # Function to generate a programming joke
 def get_joke():
